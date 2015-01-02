@@ -1,0 +1,8 @@
+# OS X folder attributes
+.DS_Store
+
+# vi swap file
+*.swp
+
+# network history
+.netrwhist
