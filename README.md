@@ -34,3 +34,5 @@ git submodule add https://github.com/nelstrom/vim-textobj-rubyblock.git bundle/v
 git submodule add https://github.com/takac/vim-hardtime.git bundle/vim-hardtime
 git submodule add https://github.com/mazubieta/gitlink-vim.git bundle/gitlink-vim
 git submodule add https://github.com/fatih/vim-go.git bundle/vim-go
+git submodule add https://github.com/majutsushi/tagbar bundle/tagbar
+
