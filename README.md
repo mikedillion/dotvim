@@ -1,3 +1,9 @@
+dotvim
+======
+
+Uh, my `vim` stuff. I guess.
+
+```
 git submodule add https://github.com/kien/ctrlp.vim.git bundle/ctrlp.vim
 git submodule add https://github.com/vim-scripts/loremipsum.git bundle/loremipsum
 git submodule add https://github.com/scrooloose/nerdcommenter.git bundle/nerdcommenter
@@ -35,4 +41,6 @@ git submodule add https://github.com/takac/vim-hardtime.git bundle/vim-hardtime
 git submodule add https://github.com/mazubieta/gitlink-vim.git bundle/gitlink-vim
 git submodule add https://github.com/fatih/vim-go.git bundle/vim-go
 git submodule add https://github.com/majutsushi/tagbar bundle/tagbar
+```
 
+Why do I keep all of that?
