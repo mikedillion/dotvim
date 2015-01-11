@@ -96,22 +96,22 @@ nnoremap <leader>o :!echo `git url`/blob/`git rev-parse --abbrev-ref HEAD`/%\#L<
 set omnifunc=syntaxcomplete#Complete
 set cm=blowfish
 
+set linespace=0
+
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 let g:airline_symbols.space = "\ua0"
 
-set linespace=0
-
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
-let g:airline_left_sep = '⮀'
-let g:airline_left_alt_sep = '⮁'
-let g:airline_right_sep = '⮂'
-let g:airline_right_alt_sep = '⮃'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.linenr = '⭡'
+let g:airline_left_sep = '⮀ '
+let g:airline_left_alt_sep = '⮁ '
+let g:airline_right_sep = '⮂l'
+let g:airline_right_alt_sep = '⮃ '
+let g:airline_symbols.branch = '⎇ '
+let g:airline_symbols.linenr = '⭡ '
 
 map <Leader>v :set invpaste paste?<CR>
 set pastetoggle=<Leader>v
