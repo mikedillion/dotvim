@@ -6,3 +6,6 @@
 
 # network history
 .netrwhist
+
+# don't save your spellings
+spell/*
