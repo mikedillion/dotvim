@@ -123,9 +123,6 @@ let g:hardtime_default_on = 0
 " GitLink
 nmap <leader>gl :echo gitlink#GitLink()<CR>
 
-" for github-issues.vim
-let g:github_access_token = "5b07631dbc9a62be6783acdbad8d88a8067fb3de"
-
 " tagbar
 nmap <F8> :TagbarToggle<CR>
 
