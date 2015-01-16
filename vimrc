@@ -75,9 +75,6 @@ vnoremap < <gv
 vnoremap > >gv
 
 silent! if emoji#available()
-  "let g:gitgutter_sign_added = emoji#for('small_blue_diamond')
-    "let g:gitgutter_sign_modified = emoji#for('small_orange_diamond')
-  "let g:gitgutter_sign_removed = emoji#for('small_red_triangle')
   let g:gitgutter_sign_added = emoji#for('green_heart')
   let g:gitgutter_sign_removed = emoji#for('broken_heart')
   let g:gitgutter_sign_modified = emoji#for('cyclone')
