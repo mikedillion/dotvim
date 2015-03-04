@@ -42,6 +42,7 @@ git submodule add https://github.com/mazubieta/gitlink-vim.git bundle/gitlink-vi
 git submodule add https://github.com/fatih/vim-go.git bundle/vim-go
 git submodule add https://github.com/majutsushi/tagbar.git bundle/tagbar
 git submodule add https://github.com/junegunn/vim-emoji.git bundle/vim-emoji
+git submodule add https://github.com/kchmck/vim-coffee-script.git bundle/vim-coffee-script
 ```
 
 Why do I keep all of that?
