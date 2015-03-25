@@ -1,6 +1,9 @@
 set nocompatible
 "set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME
 
+" No bell please!
+set visualbell t_vb=
+
 nnoremap <SPACE> <NOP>
 map <SPACE> <LEADER>
 let mapleader = "\<Space>"
