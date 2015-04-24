@@ -65,10 +65,10 @@ nnoremap += :NumbersToggle<CR>
 "com W w
 
 " indentLine plugin
-let g:indentLine_enabled = 1
+let g:indentLine_enabled = 0
 let g:indentLine_color_term = 239
 let g:indentLine_color_gui = '#A4E57E'
-let g:indentLine_char = '︙'
+let g:indentLine_char = '|'
 
 " indent-guides plugin
 let g:indent_guides_enable_on_vim_startup = 1
