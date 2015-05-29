@@ -20,6 +20,7 @@ endif
 execute pathogen#infect()
 execute pathogen#helptags()
 syntax on
+filetype plugin on
 filetype plugin indent on
 
 let g:ctrlp_map = '<c-p>'
@@ -27,7 +28,7 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " solarized colors
 colorscheme solarized
-set background=dark
+set background=light
 
 " flatui
 " colorscheme flatui
@@ -154,3 +155,6 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
 \ }
+
+nnoremap <leader>. :CtrlPTag<cr>
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
