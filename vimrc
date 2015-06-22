@@ -3,6 +3,7 @@ set nocompatible
 
 " No bell please!
 set visualbell t_vb=
+set listchars=eol:↲,tab:▶▹,nbsp:␣,extends:…,trail:•
 
 nnoremap <SPACE> <NOP>
 map <SPACE> <LEADER>
@@ -28,7 +29,7 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " solarized colors
 colorscheme solarized
-set background=light
+set background=dark
 
 " flatui
 " colorscheme flatui
