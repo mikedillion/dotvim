@@ -29,7 +29,7 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " solarized colors
 colorscheme solarized
-set background=dark
+set background=light
 
 " flatui
 " colorscheme flatui
@@ -77,7 +77,7 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 1
 
 " Reselect the visual area when changing indenting in visual mode.
-vnoremap < <gv
+
 vnoremap > >gv
 
 silent! if emoji#available()
@@ -101,20 +101,11 @@ set cm=blowfish
 
 set linespace=0
 
+let g:airline_theme='bubblegum'
+
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
-let g:airline_symbols.space = "\ua0"
-
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-let g:airline_left_sep = '⮀ '
-let g:airline_left_alt_sep = '⮁ '
-let g:airline_right_sep = '⮂l'
-let g:airline_right_alt_sep = '⮃ '
-let g:airline_symbols.branch = '⎇ '
-let g:airline_symbols.linenr = '⭡ '
 
 map <Leader>v :set invpaste paste?<CR>
 set pastetoggle=<Leader>v
