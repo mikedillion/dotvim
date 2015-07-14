@@ -128,3 +128,6 @@
 [submodule "bundle/vim-rspec"]
 	path = bundle/vim-rspec
 	url = https://github.com/thoughtbot/vim-rspec.git
+[submodule "bundle/go-explorer"]
+	path = bundle/go-explorer
+	url = https://github.com/garyburd/go-explorer.git

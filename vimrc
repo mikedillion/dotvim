@@ -29,7 +29,7 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " solarized colors
 colorscheme solarized
-set background=dark
+set background=light
 
 " flatui
 " colorscheme flatui
@@ -173,3 +173,6 @@ au FileType ruby set tabstop=2 softtabstop=2 shiftwidth=2
 
 " Python
 au FileType python set tabstop=8 expandtab shiftwidth=4 softtabstop=4
+
+" Go
+au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
