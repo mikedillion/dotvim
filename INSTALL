@@ -1,0 +1,2 @@
+ln -sf $HOME/dotvim $HOME/.vim
+ln -sf $HOME/dotvim/vimrc $HOME/.vimrc

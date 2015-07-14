@@ -29,7 +29,7 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " solarized colors
 colorscheme solarized
-set background=light
+set background=dark
 
 " flatui
 " colorscheme flatui
@@ -52,11 +52,6 @@ set foldlevel=1
 nnoremap ,, :tabnew<CR>
 nnoremap ,. :tabnext<CR>
 nnoremap ., :tabpre<CR>
-
-set autoindent
-set expandtab
-set softtabstop=2
-set shiftwidth=2
 
 " for numbers.vim
 let g:enable_numbers = 0
@@ -157,3 +152,24 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+if has('mac')
+  let g:loaded_open_url = 1
+else
+  let g:loaded_open_url = 0
+endif
+
+au FileType ruby set tabstop=2 softtabstop=2
+
+set autoindent
+set expandtab
+
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+
+" Ruby
+au FileType ruby set tabstop=2 softtabstop=2 shiftwidth=2
+
+" Python
+au FileType python set tabstop=8 expandtab shiftwidth=4 softtabstop=4
