@@ -155,6 +155,7 @@ map <Leader>a :call RunAllSpecs()<CR>
 
 if has('mac')
   let g:loaded_open_url = 1
+  map <leader>u :OpenURL<cr>
 else
   let g:loaded_open_url = 0
 endif
