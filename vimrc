@@ -29,7 +29,8 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " solarized colors
 colorscheme solarized
-set background=light
+set background=dark
+" set background=light
 
 " flatui
 " colorscheme flatui
