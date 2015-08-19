@@ -161,8 +161,6 @@ else
   let g:loaded_open_url = 0
 endif
 
-au FileType ruby set tabstop=2 softtabstop=2
-
 set autoindent
 set expandtab
 
@@ -177,4 +175,8 @@ au FileType ruby set tabstop=2 softtabstop=2 shiftwidth=2
 au FileType python set tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
 " Go
-au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
+au BufNewFile,BufRead *.go setlocal noet tabstop=4 shiftwidth=4 softtabstop=4
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_fmt_command = "goimports"
