@@ -77,9 +77,9 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 1
 
 " Reselect the visual area when changing indenting in visual mode.
-
 vnoremap > >gv
 
+" vim-gitgutter
 silent! if emoji#available()
   let g:gitgutter_sign_added = emoji#for('green_heart')
   let g:gitgutter_sign_removed = emoji#for('broken_heart')
@@ -186,6 +186,10 @@ silent! if emoji#available()
   let g:flake8_error_marker = emoji#for('small_blue_diamond')
   let g:flake8_warning_marker = emoji#for('small_red_triangle_down')
 endif
+
+let g:flake8_pyflake_marker = ''
+let g:flake8_complexity_marker = ''
+let g:flake8_naming_marker = ''
 
 highlight link Flake8_Error LineNr
 highlight link Flake8_Warning LineNr
