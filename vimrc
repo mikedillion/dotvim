@@ -17,6 +17,10 @@ if has("mac")
   set backupskip+=/private/tmp/*
 endif
 
+" ghlight lines over 79 columns (PEP8)
+highlight OverLength ctermbg=red ctermfg=white guibg=#351818
+match OverLength /\%79v.\+/
+
 " tpope pathogen
 execute pathogen#infect()
 execute pathogen#helptags()
