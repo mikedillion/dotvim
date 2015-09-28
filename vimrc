@@ -152,12 +152,6 @@ let g:tagbar_type_go = {
 nnoremap <leader>. :CtrlPTag<cr>
 nnoremap <silent> <Leader>b :TagbarToggle<CR>
 
-" RSpec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
-
 if has('mac')
   let g:loaded_open_url = 1
   map <leader>u :OpenURL<cr>
@@ -174,6 +168,12 @@ set shiftwidth=2
 
 " Ruby
 au FileType ruby set tabstop=2 softtabstop=2 shiftwidth=2
+
+" RSpec.vim mappings
+autocmd FileType ruby map <Leader>t :call RunCurrentSpecFile()<CR>
+autocmd FileType ruby map <Leader>s :call RunNearestSpec()<CR>
+autocmd FileType ruby map <Leader>l :call RunLastSpec()<CR>
+autocmd FileType ruby map <Leader>a :call RunAllSpecs()<CR>
 
 " Python
 au FileType python set tabstop=8 expandtab shiftwidth=4 softtabstop=4
