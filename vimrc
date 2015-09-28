@@ -41,7 +41,7 @@ set background=dark
 
 set hlsearch
 set ruler
-set nu
+set relativenumber
 
 " setfiletype for common files with no extension
 au BufRead,BufNewFile Gemfile set filetype=ruby
