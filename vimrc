@@ -174,6 +174,21 @@ au FileType ruby set tabstop=2 softtabstop=2 shiftwidth=2
 " Python
 au FileType python set tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
+" Python :: flake8.vim
+autocmd FileType python map <buffer> <Leader>f :call Flake8()<CR>
+let g:flake8_show_in_gutter = 1
+
+silent! if emoji#available()
+  let g:flake8_error_marker = emoji#for('small_blue_diamond')
+  let g:flake8_warning_marker = emoji#for('small_red_triangle_down')
+endif
+
+highlight link Flake8_Error LineNr
+highlight link Flake8_Warning LineNr
+highlight link Flake8_Complexity LineNr
+highlight link Flake8_Naming LineNr
+highlight link Flake8_PyFlake LineNr
+
 " Go
 au BufNewFile,BufRead *.go setlocal noet tabstop=4 shiftwidth=4 softtabstop=4
 let g:go_highlight_functions = 1
