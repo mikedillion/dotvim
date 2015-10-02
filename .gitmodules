@@ -134,3 +134,6 @@
 [submodule "bundle/flake8"]
 	path = bundle/flake8
 	url = https://github.com/nvie/vim-flake8.git
+[submodule "bundle/numbertoggle"]
+	path = bundle/numbertoggle
+	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle.git
