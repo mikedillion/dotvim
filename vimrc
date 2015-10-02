@@ -41,6 +41,7 @@ set background=dark
 
 set hlsearch
 set ruler
+set number
 set relativenumber
 
 " setfiletype for common files with no extension
