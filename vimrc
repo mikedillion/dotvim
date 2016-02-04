@@ -5,6 +5,8 @@ set nocompatible
 set visualbell t_vb=
 set listchars=eol:↲,tab:▶▹,nbsp:␣,extends:…,trail:•
 
+nnoremap K <nop>
+
 nnoremap <SPACE> <NOP>
 map <SPACE> <LEADER>
 let mapleader = "\<Space>"
