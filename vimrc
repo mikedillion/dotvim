@@ -211,4 +211,4 @@ let g:go_fmt_command = "goimports"
 nmap <Leader>e :s/:\([^: ]\+\):/\=emoji#for(submatch(1), submatch(0), 0)/g<CR>:nohl<CR>
 
 " set guifont?; set guifont!
-set guifont=Menlo\ Regular:h14"
+set guifont=Menlo\ Regular:h12"
