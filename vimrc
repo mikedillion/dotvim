@@ -200,6 +200,10 @@ highlight link Flake8_Complexity LineNr
 highlight link Flake8_Naming LineNr
 highlight link Flake8_PyFlake LineNr
 
+" Extra space around comments.
+" Flake8 compliant. Annoying everywhere else
+let NERDSpaceDelims=1
+
 " Go
 au BufNewFile,BufRead *.go setlocal noet tabstop=4 shiftwidth=4 softtabstop=4
 let g:go_highlight_functions = 1
