@@ -58,10 +58,6 @@
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate
-[submodule "bundle/vim-airline"]
-	path = bundle/vim-airline
-	url = https://github.com/Raimondi/delimitMate
-	url = https://github.com/bling/vim-airline.git
 [submodule "bundle/vim-emoji"]
 	path = bundle/vim-emoji
 	url = https://github.com/junegunn/vim-emoji.git
