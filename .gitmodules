@@ -140,3 +140,6 @@
 [submodule "bundle/vim-textobj-python"]
 	path = bundle/vim-textobj-python
 	url = https://github.com/bps/vim-textobj-python.git
+[submodule "bundle/FIGlet"]
+	path = bundle/FIGlet
+	url = https://github.com/fadein/FIGlet.vim.git

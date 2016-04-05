@@ -48,6 +48,7 @@ git submodule add https://github.com/terryma/vim-multiple-cursors.git bundle/vim
 git submodule add https://github.com/hallettj/jslint.vim.git bundle/jslint
 git submodule add https://github.com/nvie/vim-flake8.git bundle/flake8
 git submodule add https://github.com/jeffkreeftmeijer/vim-numbertoggle.git bundle/numbertoggle
+git submodule add https://github.com/fadein/FIGlet.vim.git bundle/FIGlet
 ```
 
 Why do I keep all of that around? `¯\_(ツ)_/¯`
