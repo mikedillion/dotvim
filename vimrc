@@ -211,7 +211,9 @@ let g:go_fmt_command = "goimports"
 nmap <Leader>e :s/:\([^: ]\+\):/\=emoji#for(submatch(1), submatch(0), 0)/g<CR>:nohl<CR>
 
 " set guifont?; set guifont!
-set guifont=Monaco:h12"
+" set guifont=Monaco:h12"
+" set guifont=Sauce_Code_Powerline:h11
+set guifont=Source\ Code\ Pro\ for\ Powerline
 
 " source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 " source /home/ubuntu/.local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
