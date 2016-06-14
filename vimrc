@@ -213,9 +213,9 @@ nmap <Leader>e :s/:\([^: ]\+\):/\=emoji#for(submatch(1), submatch(0), 0)/g<CR>:n
 " set guifont?; set guifont!
 " set guifont=Monaco:h12"
 " set guifont=Sauce_Code_Powerline:h11
-set guifont=Source\ Code\ Pro\ for\ Powerline
+set guifont=Source\ Code\ Pro\ for\ Powerline:h11
 
-" source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 " source /home/ubuntu/.local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
