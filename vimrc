@@ -105,8 +105,8 @@ set cm=blowfish
 
 set linespace=0
 
-map <Leader>v :set invpaste paste?<CR>
-set pastetoggle=<Leader>v
+map <leader>v :set invpaste paste?<CR>
+set pastetoggle=<leader>v
 
 " vim-hardtime
 " https://github.com/takac/vim-hardtime
@@ -179,8 +179,11 @@ autocmd FileType ruby map <Leader>a :call RunAllSpecs()<CR>
 au FileType python set tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
 " Python :: flake8.vim
-autocmd FileType python map <buffer> <Leader>f :call Flake8()<CR>
+autocmd FileType python map <buffer> <leader>f :call Flake8()<CR>
 let g:flake8_show_in_gutter = 1
+
+" yapf
+:nnoremap <leader>y :call Yapf()<cr>
 
 silent! if emoji#available()
   let g:flake8_error_marker = emoji#for('small_blue_diamond')
@@ -209,7 +212,7 @@ let g:go_highlight_structs = 1
 let g:go_fmt_command = "goimports"
 
 " \e to convert :smiley_cat: to 😸
-nmap <Leader>e :s/:\([^: ]\+\):/\=emoji#for(submatch(1), submatch(0), 0)/g<CR>:nohl<CR>
+nmap <leader>e :s/:\([^: ]\+\):/\=emoji#for(submatch(1), submatch(0), 0)/g<CR>:nohl<CR>
 
 " set guifont?; set guifont!
 " set guifont=Monaco:h12"
