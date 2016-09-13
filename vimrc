@@ -14,6 +14,8 @@ let mapleader = "\<Space>"
 "inoremap <ESC> <NOP>
 "inoremap jk <ESC>
 
+set showbreak=↪
+
 set backupskip+=*.tmp,crontab.*
 if has("mac")
   set backupskip+=/private/tmp/*
@@ -92,9 +94,6 @@ silent! if emoji#available()
   let g:gitgutter_sign_modified_removed = emoji#for('collision')
 endif
 
-" convert hashrockets globally
-nmap <leader>rh :%s/\v:(\w+) \=\>/\1:/g<cr>
-
 " https://github.com/mlafeldt/chef-runner#use-with-vim
 nnoremap <leader>r :w\|!chef-runner %<cr>
 
@@ -117,7 +116,10 @@ let g:hardtime_default_on = 0
 nmap <leader>gl :echo gitlink#GitLink()<CR>
 
 " tagbar
-nmap <F8> :TagbarToggle<CR>
+nmap <leader>t :TagbarToggle<CR>
+
+" ctag junk
+nnoremap <leader>. :CtrlPTag<cr>
 
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
@@ -147,10 +149,6 @@ let g:tagbar_type_go = {
     \ 'ctagsargs' : '-sort -silent'
 \ }
 
-" ctag junk
-nnoremap <leader>. :CtrlPTag<cr>
-nnoremap <silent> <Leader>b :TagbarToggle<CR>
-
 if has('mac')
   let g:loaded_open_url = 1
   map <leader>u :OpenURL<cr>
@@ -167,6 +165,9 @@ set shiftwidth=2
 
 " Ruby
 au FileType ruby set tabstop=2 softtabstop=2 shiftwidth=2
+
+" convert hashrockets globally
+nmap <leader>rh :%s/\v:(\w+) \=\>/\1:/g<cr>
 
 " RSpec.vim mappings
 autocmd FileType ruby map <Leader>t :call RunCurrentSpecFile()<CR>
