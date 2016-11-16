@@ -7,5 +7,5 @@
 # network history
 .netrwhist
 
-# don't save your spellings
-spell
+# Don't save binary spellings
+*.spl
