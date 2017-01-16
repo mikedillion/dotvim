@@ -139,3 +139,6 @@
 [submodule "vim-yapf"]
 	path = vim-yapf
 	url = https://github.com/mindriot101/vim-yapf.git
+[submodule "bundle/jshint"]
+	path = bundle/jshint
+	url = https://github.com/wookiehangover/jshint.vim.git
