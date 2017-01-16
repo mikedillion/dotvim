@@ -45,7 +45,6 @@ git submodule add https://github.com/majutsushi/tagbar.git bundle/tagbar
 git submodule add https://github.com/junegunn/vim-emoji.git bundle/vim-emoji
 git submodule add https://github.com/kchmck/vim-coffee-script.git bundle/vim-coffee-script
 git submodule add https://github.com/terryma/vim-multiple-cursors.git bundle/vim-multiple-cursors
-git submodule add https://github.com/hallettj/jslint.vim.git bundle/jslint
 git submodule add https://github.com/nvie/vim-flake8.git bundle/flake8
 git submodule add https://github.com/jeffkreeftmeijer/vim-numbertoggle.git bundle/numbertoggle
 git submodule add https://github.com/fadein/FIGlet.vim.git bundle/FIGlet
