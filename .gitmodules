@@ -142,3 +142,6 @@
 [submodule "bundle/vim-yapf"]
 	path = bundle/vim-yapf
 	url = https://github.com/mindriot101/vim-yapf.git
+[submodule "bundle/vimtex"]
+	path = bundle/vimtex
+	url = https://github.com/lervag/vimtex.git

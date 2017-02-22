@@ -50,6 +50,7 @@ git submodule add https://github.com/jeffkreeftmeijer/vim-numbertoggle.git bundl
 git submodule add https://github.com/fadein/FIGlet.vim.git bundle/FIGlet
 git submodule add https://github.com/mindriot101/vim-yapf.git
 git submodule add https://github.com/wookiehangover/jshint.vim.git bundle/jshint
+git submodule add https://github.com/lervag/vimtex.git bundle/vimtex
 ```
 
 Why do I keep all of that around? `¯\_(ツ)_/¯`
