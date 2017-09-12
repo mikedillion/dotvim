@@ -37,7 +37,7 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " solarized colors
 colorscheme solarized
-set background=dark
+set background=light
 
 map <Leader>d :set background=dark<CR>
 map <Leader>l :set background=light<CR>
