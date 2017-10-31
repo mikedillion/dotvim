@@ -32,8 +32,7 @@ syntax on
 filetype plugin on
 filetype plugin indent on
 
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+nmap <Leader>p :CtrlP<CR>
 
 " solarized colors
 colorscheme solarized
