@@ -157,3 +157,6 @@
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
+[submodule "bundle/openurl.vim"]
+	path = bundle/openurl.vim
+	url = https://github.com/vim-scripts/openurl.vim.git
