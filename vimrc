@@ -226,6 +226,6 @@ set guifont=Monaco:h12"
 set guifont=Sauce_Code_Powerline:h11
 " set guifont=Source\ Code\ Pro\ for\ Powerline:h11
 
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
