@@ -157,3 +157,6 @@
 [submodule "bundle/pydoc"]
 	path = pack/whatever/start/pydoc
 	url = https://github.com/vim-scripts/pydoc.vim
+[submodule "pack/whatever/opt/vim-db"]
+	path = pack/whatever/opt/vim-db
+	url = https://github.com/tpope/vim-db
