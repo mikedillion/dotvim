@@ -157,8 +157,8 @@
 [submodule "bundle/openurl.vim"]
 	path = bundle/openurl.vim
 	url = https://github.com/vim-scripts/openurl.vim.git
-[submodule "/Users/miked/.vim/bundle/rust.vim"]
-	path = /Users/miked/.vim/bundle/rust.vim
+[submodule "rust.vim"]
+	path = rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
 [submodule "bundle/ale"]
 	path = bundle/ale
