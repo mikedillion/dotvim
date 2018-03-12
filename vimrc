@@ -226,9 +226,14 @@ set guifont=Monaco:h12"
 set guifont=Sauce_Code_Powerline:h11
 " set guifont=Source\ Code\ Pro\ for\ Powerline:h11
 
-command! -nargs=1 Py py3 <args>
-set pythonthreedll=/usr/local/Frameworks/Python.framework/Versions/Current/Python
-set pythonthreehome=/usr/local/Frameworks/Python.framework/Versions/Current
+" fat fingers
+nnoremap q: <nop>
+nnoremap q/ <nop>
+nnoremap q? <nop>
+nnoremap Q: q:
+nnoremap Q/ q/
+nnoremap Q? q?
+
 python3 from powerline.vim import setup as powerline_setup
 python3 powerline_setup()
 python3 del powerline_setup
