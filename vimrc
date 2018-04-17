@@ -11,8 +11,8 @@ nnoremap <SPACE> <NOP>
 map <SPACE> <LEADER>
 let mapleader = "\<Space>"
 
-"inoremap <ESC> <NOP>
-"inoremap jk <ESC>
+inoremap <ESC> <NOP>
+inoremap jj <ESC>
 
 set showbreak=↪
 
@@ -222,9 +222,9 @@ let g:go_list_type = "quickfix"
 nmap <leader>e :s/:\([^: ]\+\):/\=emoji#for(submatch(1), submatch(0), 0)/g<CR>:nohl<CR>
 
 " set guifont?; set guifont!
-set guifont=Monaco:h12"
-set guifont=Sauce_Code_Powerline:h11
-" set guifont=Source\ Code\ Pro\ for\ Powerline:h11
+" set guifont=Monaco:h12
+" set guifont=SauceCodePro\ Nerd\ Font\ Mono:h11
+set guifont=Source\ Code\ Pro\ for\ Powerline:h11
 
 " fat fingers
 nnoremap q: <nop>
@@ -237,3 +237,5 @@ nnoremap Q? q?
 python3 from powerline.vim import setup as powerline_setup
 python3 powerline_setup()
 python3 del powerline_setup
+
+set t_BE=
