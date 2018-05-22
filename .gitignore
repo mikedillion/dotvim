@@ -9,3 +9,5 @@
 
 # Don't save binary spellings
 *.spl
+
+spell
