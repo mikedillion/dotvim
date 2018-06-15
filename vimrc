@@ -28,6 +28,7 @@ match OverLength /\%79v.\+/
 " tpope pathogen
 execute pathogen#infect()
 execute pathogen#helptags()
+
 syntax on
 filetype plugin on
 filetype plugin indent on
@@ -35,8 +36,8 @@ filetype plugin indent on
 nmap <Leader>p :CtrlP<CR>
 
 " solarized colors
-colorscheme solarized
-set background=light
+colorscheme synthwave
+set background=dark
 
 map <Leader>d :set background=dark<CR>
 map <Leader>l :set background=light<CR>
@@ -185,6 +186,7 @@ let g:flake8_show_in_gutter = 1
 
 " yapf
 :nnoremap <leader>y :call Yapf()<cr>
+setlocal equalprg=yapf
 
 silent! if emoji#available()
   let g:flake8_error_marker = emoji#for('small_blue_diamond')
