@@ -36,7 +36,7 @@ filetype plugin indent on
 nmap <Leader>p :CtrlP<CR>
 
 " solarized colors
-colorscheme synthwave
+colorscheme solarized
 set background=dark
 
 map <Leader>d :set background=dark<CR>
