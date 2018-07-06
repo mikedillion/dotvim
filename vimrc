@@ -256,3 +256,8 @@ endif
 
 " http://vim.wikia.com/wiki/Insert_current_date_or_time
 :nnoremap <leader>dt "=strftime("%c")<CR>P
+
+set undodir=$HOME/.vim/undo//
+set undofile
+
+set directory^=$HOME/.vim/swap//
