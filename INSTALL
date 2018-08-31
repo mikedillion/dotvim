@@ -1,1 +1,3 @@
 ln -sf $HOME/.vim/vimrc $HOME/.vimrc
+mkdir -p $HOME/.vim/undo
+mkdir -p $HOME/.vim/swap
