@@ -11,8 +11,8 @@ nnoremap <SPACE> <NOP>
 map <SPACE> <LEADER>
 let mapleader = "\<Space>"
 
-inoremap <ESC> <NOP>
-inoremap jj <ESC>
+" inoremap <ESC> <NOP>
+" inoremap jj <ESC>
 
 set showbreak=↪
 
