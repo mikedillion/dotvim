@@ -37,7 +37,7 @@ nmap <Leader>p :CtrlP<CR>
 
 " solarized colors
 colorscheme solarized
-set background=light
+set background=dark
 
 map <Leader>d :set background=dark<CR>
 map <Leader>l :set background=light<CR>
