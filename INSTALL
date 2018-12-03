@@ -1,3 +1,4 @@
 ln -sf $HOME/.vim/vimrc $HOME/.vimrc
+ln -sf $HOME/dotfiles_private/vim_spell $HOME/.vim/spell
 mkdir -p $HOME/.vim/undo
 mkdir -p $HOME/.vim/swap
