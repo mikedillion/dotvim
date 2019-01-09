@@ -267,6 +267,7 @@ set directory^=$HOME/.vim/swap//
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
  \   'javascript': ['standard'],
+ \   'json': ['jq'],
 \}
 
 let g:ale_linters = {'javascript': ['standard']}
