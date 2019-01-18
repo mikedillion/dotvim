@@ -273,3 +273,11 @@ let g:ale_fixers = {
 let g:ale_linters = {'javascript': ['standard']}
 
 nmap <leader>a <Plug>(ale_fix)
+
+" https://boxes.thomasjensen.com/docs/install.html
+vmap ,mc !boxes -d c-cmt<CR>
+nmap ,mc !!boxes -d c-cmt<CR>
+vmap ,xc !boxes -d c-cmt -r<CR>
+nmap ,xc !!boxes -d c-cmt -r<CR>
+vmap ,xp !boxes -d parchment <CR>
+nmap ,xp !!boxes -d parchment <CR>
