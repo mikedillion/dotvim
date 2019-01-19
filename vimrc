@@ -277,7 +277,18 @@ nmap <leader>a <Plug>(ale_fix)
 " https://boxes.thomasjensen.com/docs/install.html
 vmap ,mc !boxes -d c-cmt<CR>
 nmap ,mc !!boxes -d c-cmt<CR>
+
 vmap ,xc !boxes -d c-cmt -r<CR>
 nmap ,xc !!boxes -d c-cmt -r<CR>
-vmap ,xp !boxes -d parchment <CR>
-nmap ,xp !!boxes -d parchment <CR>
+
+vmap ,dc !boxes -s 80 <CR>
+nmap ,dc !!boxes -s 80 <CR>
+
+vmap ,fc !boxes -d c-cmt <CR>
+nmap ,fc !!boxes -d c-cmt <CR>
+
+vmap ,bp !boxes -d parchment <CR>
+nmap ,bp !!boxes -d parchment <CR>
+
+vmap ,bd !boxes -d diamonds -a hcvc <CR>
+nmap ,bd !!boxes -d diamonds -a hcvc <CR>
