@@ -55,8 +55,9 @@ set relativenumber
 au BufRead,BufNewFile Gemfile set filetype=ruby
 au BufRead,BufNewFile Berksfile set filetype=ruby
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
-au BufRead,BufNewFile Gruntfile set filetype=javascript
 au BufRead,BufNewFile Parsefile set filetype=yaml
+au BufRead,BufNewFile Gruntfile set filetype=javascript
+au BufRead,BufNewFile .sequelizerc set filetype=javascript
 
 set foldmethod=indent   "fold based on indent
 set foldnestmax=10      "deepest fold is 10 levels
