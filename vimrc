@@ -298,3 +298,8 @@ nmap ,bp !!boxes -d parchment <CR>
 
 vmap ,bd !boxes -d diamonds -a hcvc <CR>
 nmap ,bd !!boxes -d diamonds -a hcvc <CR>
+
+vmap ,xp !boxes -d parchment <CR>
+nmap ,xp !!boxes -d parchment <CR>
+
+imap jj <Esc>
