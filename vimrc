@@ -268,11 +268,13 @@ set directory^=$HOME/.vim/swap//
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \    'javascript': ['eslint'],
+\   'sh': ['shfmt'],
 \}
 
 let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'json': ['jq'],
+\   'sh': ['shellcheck'],
 \ }
 
 let g:ale_javascript_eslint_executable = 'eslint'
