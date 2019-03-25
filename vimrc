@@ -89,9 +89,6 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
-" \e to convert :smiley_cat: to 😸
-nmap <leader>e :s/:\([^: ]\+\):/\=emoji#for(submatch(1), submatch(0), 0)/g<CR>:nohl<CR>
-
 " set guifont?; set guifont!
 " set guifont=Monaco:h12
 " set guifont=SauceCodePro\ Nerd\ Font\ Mono:h11
@@ -336,16 +333,16 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 1
 
 " vim-gitgutter
-let g:gitgutter_sign_added = '✚'
-let g:gitgutter_sign_removed = '✖'
-let g:gitgutter_sign_modified = '➜'
-let g:gitgutter_sign_modified_removed = '⚠'
-
 silent! if emoji#available()
   let g:gitgutter_sign_added = emoji#for('green_heart')
   let g:gitgutter_sign_removed = emoji#for('broken_heart')
   let g:gitgutter_sign_modified = emoji#for('cyclone')
   let g:gitgutter_sign_modified_removed = emoji#for('collision')
+else
+  let g:gitgutter_sign_added = '✚'
+  let g:gitgutter_sign_removed = '✖'
+  let g:gitgutter_sign_modified = '➜'
+  let g:gitgutter_sign_modified_removed = '⚠'
 endif
 
 " https://github.com/mlafeldt/chef-runner#use-with-vim
@@ -402,3 +399,9 @@ if has('mac')
 else
   let g:loaded_open_url = 0
 endif
+
+" vim-emoji
+set completefunc=emoji#complete
+
+" leader to convert :smiley_cat: to 😸
+nmap <leader>e :s/:\([^: ]\+\):/\=emoji#for(submatch(1), submatch(0), 0)/g<CR>:nohl<CR>
