@@ -280,27 +280,19 @@ nmap <leader>a <Plug>(ale_fix)
 "   |                            |
 "   |   _________________________|_
 "    \_/___________________________/
-" https://boxes.thomasjensen.com/docs/install.html
-vmap ,mc !boxes -d c-cmt<CR>
-nmap ,mc !!boxes -d c-cmt<CR>
-
-vmap ,xc !boxes -d c-cmt -r<CR>
-nmap ,xc !!boxes -d c-cmt -r<CR>
-
-vmap ,dc !boxes -s 80 <CR>
-nmap ,dc !!boxes -s 80 <CR>
-
-vmap ,fc !boxes -d c-cmt <CR>
-nmap ,fc !!boxes -d c-cmt <CR>
-
-vmap ,bp !boxes -d parchment <CR>
-nmap ,bp !!boxes -d parchment <CR>
-
-vmap ,bd !boxes -d diamonds -a hcvc <CR>
-nmap ,bd !!boxes -d diamonds -a hcvc <CR>
+" https://boxes.thomasjensen.com/docs/
+" -r removes boxes with the specified configuration the above (notice -r)
+" -s WIDTHxHEIGHT  specifies the box size
+" -d specifies formats from boxes-config
+"    see: https://boxes.thomasjensen.com/box-designs.txt
+" -a specifies aligment inside box
+"    e.x. hcvc = horizontal center and vertical center
 
 vmap ,xp !boxes -d parchment <CR>
 nmap ,xp !!boxes -d parchment <CR>
+
+vmap ,xs !boxes -d stone <CR>
+nmap ,xs !!boxes -d stone <CR>
 
 imap jj <Esc>
 
