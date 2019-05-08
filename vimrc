@@ -246,6 +246,7 @@ let g:ale_fixers = {
 \   'json': ['fixjson'],
 \   'python': ['autopep8', 'yapf'],
 \   'sh': ['shfmt'],
+\   'yaml': ['prettier'],
 \}
 
 let g:ale_linters = {
