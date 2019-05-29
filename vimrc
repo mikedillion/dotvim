@@ -41,8 +41,9 @@ highlight OverLength ctermbg=red ctermfg=white guibg=#351818
 match OverLength /\%79v.\+/
 
 " solarized colors
-colorscheme solarized
-set background=dark
+" colorscheme solarized
+" set background=dark
+color dracula
 
 map <Leader>d :set background=dark<CR>
 map <Leader>l :set background=light<CR>
