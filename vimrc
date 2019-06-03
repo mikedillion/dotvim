@@ -245,17 +245,18 @@ let g:ale_fixers = {
 \   'css': ['prettier'],
 \   'javascript': ['eslint'],
 \   'json': ['fixjson'],
-\   'python': ['autopep8', 'yapf'],
 \   'sh': ['shfmt'],
+\   'python': ['autopep8', 'yapf'],
 \   'yaml': ['prettier'],
 \}
 
 let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'json': ['jq'],
-\   'python': ['flake8', 'pylint'],
+\   'python': ['pylint'],
 \   'sh': ['shellcheck'],
 \ }
+" \   'python': ['flake8', 'pylint'],
 
 let g:ale_javascript_eslint_executable = 'eslint'
 let g:ale_javascript_eslint_use_global = 0
