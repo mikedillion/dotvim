@@ -40,10 +40,10 @@ endif
 highlight OverLength ctermbg=red ctermfg=white guibg=#351818
 match OverLength /\%79v.\+/
 
-" solarized colors
-" colorscheme solarized
-" set background=dark
-colorscheme dracula
+colorscheme solarized
+set background=dark
+
+" colorscheme dracula
 
 map <Leader>d :set background=dark<CR>
 map <Leader>l :set background=light<CR>
@@ -165,7 +165,7 @@ au FileType python set tabstop=8 expandtab shiftwidth=4 softtabstop=4
 setlocal equalprg=yapf
 
 " Python :: flake8.vim
-" autocmd FileType python map <buffer> <leader>f :call Flake8()<CR>
+autocmd FileType python map <buffer> <leader>f :call Flake8()<CR>
 " let g:flake8_show_in_gutter = 1
 
 " silent! if emoji#available()
@@ -248,15 +248,16 @@ let g:ale_fixers = {
 \   'sh': ['shfmt'],
 \   'python': ['autopep8', 'yapf'],
 \   'yaml': ['prettier'],
+\   'sql': ['sqlfluff'],
 \}
 
 let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'json': ['jq'],
-\   'python': ['pylint'],
+\   'python': ['flake8', 'pylint'],
 \   'sh': ['shellcheck'],
+\   'sql': ['sqlint', 'sqlfluff'],
 \ }
-" \   'python': ['flake8', 'pylint'],
 
 let g:ale_javascript_eslint_executable = 'eslint'
 let g:ale_javascript_eslint_use_global = 0
