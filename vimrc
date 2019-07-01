@@ -44,6 +44,10 @@ match OverLength /\%79v.\+/
 " solarized colors
 colorscheme solarized
 set background=dark
+<<<<<<< Updated upstream
+=======
+" color dracula
+>>>>>>> Stashed changes
 
 map <Leader>d :set background=dark<CR>
 map <Leader>l :set background=light<CR>
