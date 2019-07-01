@@ -41,13 +41,10 @@ highlight OverLength ctermbg=red ctermfg=white guibg=#351818
 match OverLength /\%79v.\+/
 
 " colorscheme dracula
+
 " solarized colors
 colorscheme solarized
 set background=dark
-<<<<<<< Updated upstream
-=======
-" color dracula
->>>>>>> Stashed changes
 
 map <Leader>d :set background=dark<CR>
 map <Leader>l :set background=light<CR>
