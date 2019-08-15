@@ -5,9 +5,9 @@ set nocompatible
 execute pathogen#infect()
 execute pathogen#helptags()
 
-syntax on
 filetype plugin on
 filetype plugin indent on
+syntax on
 
 set hlsearch
 set ruler
@@ -46,8 +46,8 @@ match OverLength /\%79v.\+/
 colorscheme solarized
 set background=light
 
-map <Leader>d :set background=dark<CR>
-map <Leader>l :set background=light<CR>
+map <leader>d :set background=dark<CR>
+map <leader>l :set background=light<CR>
 
 " flatui
 " colorscheme flatui
@@ -144,10 +144,10 @@ au FileType ruby set tabstop=2 softtabstop=2 shiftwidth=2
 nmap <leader>rh :%s/\v:(\w+) \=\>/\1:/g<cr>
 
 " RSpec.vim mappings
-autocmd FileType ruby map <Leader>t :call RunCurrentSpecFile()<CR>
-autocmd FileType ruby map <Leader>s :call RunNearestSpec()<CR>
-autocmd FileType ruby map <Leader>l :call RunLastSpec()<CR>
-autocmd FileType ruby map <Leader>a :call RunAllSpecs()<CR>
+autocmd FileType ruby map <leader>t :call RunCurrentSpecFile()<CR>
+autocmd FileType ruby map <leader>s :call RunNearestSpec()<CR>
+autocmd FileType ruby map <leader>l :call RunLastSpec()<CR>
+autocmd FileType ruby map <leader>a :call RunAllSpecs()<CR>
 
 "  _______________________________________
 " /\                                      \
@@ -313,7 +313,7 @@ imap jj <Esc>
 "    \_/________________________________________________________/
 
 " CtrlP
-nmap <Leader>p :CtrlP<CR>
+nmap <leader>p :CtrlP<CR>
 
 " numbers.vim
 let g:enable_numbers = 0
