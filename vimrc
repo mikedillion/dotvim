@@ -389,14 +389,6 @@ let g:tagbar_type_go = {
     \ 'ctagsargs' : '-sort -silent'
 \ }
 
-" OpenURL
-if has('mac')
-  let g:loaded_open_url = 1
-  map <leader>u :OpenURL<cr>
-else
-  let g:loaded_open_url = 0
-endif
-
 " vim-emoji
 set completefunc=emoji#complete
 
