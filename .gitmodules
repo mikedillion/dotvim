@@ -25,9 +25,6 @@
 [submodule "bundle/vim-markdown"]
 	path = pack/whatever/start/vim-markdown
 	url = https://github.com/tpope/vim-markdown.git
-[submodule "bundle/vim-open-url"]
-	path = pack/whatever/start/vim-open-url
-	url = https://github.com/henrik/vim-open-url.git
 [submodule "bundle/vim-repeat"]
 	path = pack/whatever/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat
@@ -145,9 +142,6 @@
 [submodule "bundle/YouCompleteMe"]
 	path = pack/whatever/opt/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
-[submodule "bundle/openurl.vim"]
-	path = pack/whatever/start/openurl.vim
-	url = https://github.com/vim-scripts/openurl.vim.git
 [submodule "bundle/rust.vim"]
 	path = pack/whatever/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
