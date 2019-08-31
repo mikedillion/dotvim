@@ -154,3 +154,6 @@
 [submodule "pack/whatever/opt/vim-db"]
 	path = pack/whatever/opt/vim-db
 	url = https://github.com/tpope/vim-db
+[submodule "pack/whatever/start/open-browser.vim"]
+	path = pack/whatever/start/open-browser.vim
+	url = https://github.com/tyru/open-browser.vim
