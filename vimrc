@@ -47,8 +47,8 @@ match OverLength /\%79v.\+/
 colorscheme solarized
 set background=light
 
-map <leader>d :set background=dark<CR>
-map <leader>l :set background=light<CR>
+map <leader>d :set background=dark<cr>
+map <leader>l :set background=light<cr>
 
 " flatui
 " colorscheme flatui
@@ -66,9 +66,9 @@ set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1
 
-nnoremap ,, :tabnew<CR>
-nnoremap ,. :tabnext<CR>
-nnoremap ., :tabpre<CR>
+nnoremap ,, :tabnew<cr>
+nnoremap ,. :tabnext<cr>
+nnoremap ., :tabpre<cr>
 
 " I'm getting tired of accidentally holding down the shift key...
 " Reissue `w` even if I capitalize it...
@@ -79,7 +79,7 @@ vnoremap > >gv
 
 set linespace=0
 
-map <leader>v :set invpaste paste?<CR>
+map <leader>v :set invpaste paste?<cr>
 set pastetoggle=<leader>v
 
 set autoindent
@@ -118,12 +118,14 @@ set t_BE=
 " endif
 
 " http://vim.wikia.com/wiki/Insert_current_date_or_time
-:nnoremap <leader>dt "=strftime("%c")<CR>P
+" http://man7.org/linux/man-pages/man3/strftime.3.html
+:nnoremap <leader>dt "=strftime("%b %d -- %H %p")<cr>P
+:nnoremap <leader>dtt "=strftime("%c")<cr>P
 
 set undodir=$HOME/.vim/undo//
 set undofile
 
-set directory^=$HOME/.vim/swap//
+set directory=$HOME/.vim/swap//
 
 set cm=blowfish
 

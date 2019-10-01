@@ -12,4 +12,7 @@ nmap ,xp !!boxes -d parchment <CR>
 vmap ,xs !boxes -d stone <CR>
 nmap ,xs !!boxes -d stone <CR>
 
+vmap ,xc !boxes -d shell <CR>
+nmap ,xc !!boxes -d shell <CR>
+
 imap jj <Esc>
