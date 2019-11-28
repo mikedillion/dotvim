@@ -45,7 +45,7 @@ match OverLength /\%79v.\+/
 
 " solarized colors
 colorscheme solarized
-set background=light
+set background=dark
 
 map <leader>d :set background=dark<cr>
 map <leader>l :set background=light<cr>
@@ -119,7 +119,7 @@ set t_BE=
 
 " http://vim.wikia.com/wiki/Insert_current_date_or_time
 " http://man7.org/linux/man-pages/man3/strftime.3.html
-:nnoremap <leader>dt "=strftime("%b %d -- %H %p")<cr>P
+:nnoremap <leader>dt "=strftime("%a %b %d, %k%p")<cr>P
 :nnoremap <leader>dtt "=strftime("%c")<cr>P
 
 set undodir=$HOME/.vim/undo//
