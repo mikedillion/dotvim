@@ -160,3 +160,6 @@
 [submodule "pack/whatever/start/Vim-Jinja2-Syntax"]
 	path = pack/whatever/start/Vim-Jinja2-Syntax
 	url = https://github.com/Glench/Vim-Jinja2-Syntax
+[submodule "pack/whatever/start/vim-obsession"]
+	path = pack/whatever/start/vim-obsession
+	url = git://github.com/tpope/vim-obsession.git
