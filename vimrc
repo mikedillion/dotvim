@@ -32,11 +32,6 @@ let mapleader = "\<Space>"
 
 set showbreak=↪
 
-set backupskip+=*.tmp,crontab.*
-if has("mac")
-  set backupskip+=/private/tmp/*
-endif
-
 " ghlight lines over 79 columns (PEP8)
 highlight OverLength ctermbg=red ctermfg=white guibg=#351818
 match OverLength /\%79v.\+/
@@ -125,12 +120,30 @@ nnoremap <leader>dt o# TODO(miked -  <Esc>"=strftime("%a %b %d, %l%p") . "):"<CR
 " https://vim.fandom.com/wiki/Encryption
 set cm=blowfish
 
+""""""""""""""""""""""
+" undo, swap, backup "
+""""""""""""""""""""""
+if isdirectory($HOME . '/.vim/undo') == 0
+	call mkdir($HOME.'/.vim/undo', 'p')
+endif
 set undodir=$HOME/.vim/undo//
 set undofile
 
+if isdirectory($HOME . '/.vim/swap') == 0
+	call mkdir($HOME.'/.vim/swap', 'p')
+endif
 set directory=$HOME/.vim/swap//
 
-set cm=blowfish
+set backupskip+=*.tmp,crontab.*
+if has("mac")
+  set backupskip+=/private/tmp/*
+endif
+
+if isdirectory($HOME . '/.vim/backup') == 0
+	call mkdir($HOME.'/.vim/backup', 'p')
+endif
+set backupdir=$HOME/.vim/backup//
+set backup
 
 source $HOME/.vim/config/ale.vim
 source $HOME/.vim/config/completion.vim

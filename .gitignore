@@ -9,7 +9,9 @@
 
 # Don't save binary spellings
 *.spl
-
-swap
-undo
 spell
+
+/swap/
+/undo/
+/spell/
+/backup/
