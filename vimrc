@@ -119,8 +119,11 @@ set t_BE=
 
 " http://vim.wikia.com/wiki/Insert_current_date_or_time
 " http://man7.org/linux/man-pages/man3/strftime.3.html
-:nnoremap <leader>dt "=strftime("%a %b %d, %k%p")<cr>P
-:nnoremap <leader>dtt "=strftime("%c")<cr>P
+nnoremap <leader>dtt "=strftime("%a %b %d, %l%p")<CR>P
+nnoremap <leader>dt o# TODO(miked -  <Esc>"=strftime("%a %b %d, %l%p") . "):"<CR>PA
+
+" https://vim.fandom.com/wiki/Encryption
+set cm=blowfish
 
 set undodir=$HOME/.vim/undo//
 set undofile
