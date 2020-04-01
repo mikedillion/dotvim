@@ -115,6 +115,9 @@ set t_BE=
 " http://vim.wikia.com/wiki/Insert_current_date_or_time
 " http://man7.org/linux/man-pages/man3/strftime.3.html
 nnoremap <leader>dtt "=strftime("%a %b %d, %l%p")<CR>P
+
+" TODO: make this a function and check for number of
+" digits in hour to get rid of that extra space
 nnoremap <leader>dt o# TODO(miked -  <Esc>"=strftime("%a %b %d, %l%p") . "):"<CR>PA
 
 " https://vim.fandom.com/wiki/Encryption

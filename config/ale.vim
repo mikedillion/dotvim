@@ -6,7 +6,7 @@ let g:ale_fixers = {
 \   'sh': ['shfmt'],
 \   'python': ['autopep8', 'yapf'],
 \   'yaml': ['prettier'],
-\   'sql': ['sqlfluff'],
+\   'sql': ['sqlint'],
 \}
 
 let g:ale_linters = {
@@ -14,7 +14,7 @@ let g:ale_linters = {
 \   'json': ['jq'],
 \   'python': ['flake8', 'pylint'],
 \   'sh': ['shellcheck'],
-\   'sql': ['sqlint', 'sqlfluff'],
+\   'sql': ['sqlint'],
 \ }
 
 let g:ale_javascript_eslint_executable = 'eslint'
