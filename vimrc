@@ -85,9 +85,7 @@ set softtabstop=2
 set shiftwidth=2
 
 " set guifont?; set guifont!
-" set guifont=Monaco:h12
-" set guifont=SauceCodePro\ Nerd\ Font\ Mono:h11
-set guifont=Source\ Code\ Pro\ for\ Powerline:h11
+set guifont=Source\ Code\ Pro\ for\ Powerline:h16
 
 " fat fingers
 nnoremap q: <nop>
