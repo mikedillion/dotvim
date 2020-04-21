@@ -163,3 +163,6 @@
 [submodule "pack/whatever/start/vim-obsession"]
 	path = pack/whatever/start/vim-obsession
 	url = git://github.com/tpope/vim-obsession.git
+[submodule "pack/whatever/start/tabular"]
+	path = pack/whatever/start/tabular
+	url = git@github.com:godlygeek/tabular.git
