@@ -147,7 +147,7 @@
 	url = https://github.com/rust-lang/rust.vim.git
 [submodule "bundle/ale"]
 	path = pack/whatever/start/ale
-	url = https://github.com/w0rp/ale.git
+	url = git@github.com:dense-analysis/ale.git
 [submodule "bundle/pydoc"]
 	path = pack/whatever/start/pydoc
 	url = https://github.com/vim-scripts/pydoc.vim
