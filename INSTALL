@@ -4,5 +4,6 @@ if [ ! -d "$HOME/.vim/spell" ]; then
   ln -sf $HOME/dotfiles_private/vim_spell $HOME/.vim/spell
 fi
 
-mkdir -p $HOME/.vim/undo
+mkdir -p $HOME/.vim/backup
 mkdir -p $HOME/.vim/swap
+mkdir -p $HOME/.vim/undo
