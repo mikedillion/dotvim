@@ -4,18 +4,22 @@ let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \   'json': ['fixjson'],
 \   'sh': ['shfmt'],
-\   'python': ['autopep8', 'yapf'],
+\   'python': ['black'],
 \   'yaml': ['prettier'],
 \   'sql': ['sqlint'],
 \}
 
+" \   'python': ['autopep8', 'yapf'],
+
 let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'json': ['jq'],
-\   'python': ['flake8', 'pylint'],
+\   'python': ['black'],
 \   'sh': ['shellcheck'],
 \   'sql': ['sqlint'],
 \ }
+
+" \   'python': ['flake8', 'pylint'],
 
 let g:ale_javascript_eslint_executable = 'eslint'
 let g:ale_javascript_eslint_use_global = 0
