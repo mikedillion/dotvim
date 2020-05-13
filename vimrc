@@ -158,3 +158,5 @@ source $HOME/.vim/config/latex.vim
 source $HOME/.vim/config/boxes.vim
 source $HOME/.vim/config/misc_plugins.vim
 source $HOME/.vim/config/urls.vim
+
+source $HOME/.vim/config/zhongwen.vim
