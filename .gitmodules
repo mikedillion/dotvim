@@ -166,3 +166,6 @@
 [submodule "pack/whatever/start/tabular"]
 	path = pack/whatever/start/tabular
 	url = git@github.com:godlygeek/tabular
+[submodule "pack/whatever/start/scala"]
+	path = pack/whatever/start/scala
+	url = git@github.com:derekwyatt/vim-scala.git
