@@ -106,9 +106,6 @@
 [submodule "bundle/vim-rspec"]
 	path = pack/whatever/start/vim-rspec
 	url = git@github.com:thoughtbot/vim-rspec
-[submodule "bundle/go-explorer"]
-	path = pack/whatever/start/go-explorer
-	url = git@github.com:garyburd/go-explorer
 [submodule "bundle/flake8"]
 	path = pack/whatever/start/flake8
 	url = git@github.com:nvie/vim-flake8
