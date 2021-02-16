@@ -39,8 +39,8 @@ match OverLength /\%79v.\+/
 " colorscheme dracula
 
 " solarized colors
-colorscheme solarized
-set background=dark
+" colorscheme solarized
+" set background=light
 
 map <leader>d :set background=dark<cr>
 map <leader>l :set background=light<cr>
