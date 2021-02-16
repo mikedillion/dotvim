@@ -125,13 +125,13 @@ set cm=blowfish
 " undo, swap, backup "
 """"""""""""""""""""""
 if isdirectory($HOME . '/.vim/undo') == 0
-	call mkdir($HOME.'/.vim/undo', 'p')
+  call mkdir($HOME.'/.vim/undo', 'p')
 endif
 set undodir=$HOME/.vim/undo//
 set undofile
 
 if isdirectory($HOME . '/.vim/swap') == 0
-	call mkdir($HOME.'/.vim/swap', 'p')
+  call mkdir($HOME.'/.vim/swap', 'p')
 endif
 set directory=$HOME/.vim/swap//
 
@@ -141,7 +141,7 @@ if has("mac")
 endif
 
 if isdirectory($HOME . '/.vim/backup') == 0
-	call mkdir($HOME.'/.vim/backup', 'p')
+  call mkdir($HOME.'/.vim/backup', 'p')
 endif
 set backupdir=$HOME/.vim/backup//
 set backup

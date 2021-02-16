@@ -137,7 +137,7 @@
 	path = pack/whatever/start/vim-man
 	url = git@github.com:vim-utils/vim-man
 [submodule "bundle/YouCompleteMe"]
-	path = pack/whatever/opt/YouCompleteMe
+	path = pack/whatever/start/YouCompleteMe
 	url = git@github.com:Valloric/YouCompleteMe
 [submodule "bundle/rust.vim"]
 	path = pack/whatever/start/rust.vim
