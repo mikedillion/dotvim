@@ -40,7 +40,7 @@ match OverLength /\%79v.\+/
 
 " solarized colors
 " colorscheme solarized
-" set background=light
+set background=light
 
 map <leader>d :set background=dark<cr>
 map <leader>l :set background=light<cr>
