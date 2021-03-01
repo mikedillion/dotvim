@@ -36,10 +36,10 @@ set showbreak=↪
 highlight OverLength ctermbg=red ctermfg=white guibg=#351818
 match OverLength /\%79v.\+/
 
-" colorscheme dracula
-
-" solarized colors
-" colorscheme solarized
+" +--------+
+" | colors |
+" +--------+
+" colorscheme lightning
 set background=light
 
 map <leader>d :set background=dark<cr>
