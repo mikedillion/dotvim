@@ -39,7 +39,7 @@ match OverLength /\%79v.\+/
 " +--------+
 " | colors |
 " +--------+
-" colorscheme lightning
+colorscheme solarized
 set background=light
 
 map <leader>d :set background=dark<cr>
