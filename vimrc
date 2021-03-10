@@ -121,29 +121,35 @@ nnoremap <leader>dt o# TODO(miked -  <Esc>"=strftime("%a %b %d, %l%p") . "):"<CR
 " https://vim.fandom.com/wiki/Encryption
 set cm=blowfish
 
-""""""""""""""""""""""
-" undo, swap, backup "
-""""""""""""""""""""""
-if isdirectory($HOME . '/.vim/undo') == 0
-  call mkdir($HOME.'/.vim/undo', 'p')
+""""""""
+" undo "
+""""""""
+if isdirectory($HOME . '/.vim_keep/undo') == 0
+  call mkdir($HOME.'/.vim_keep/undo', 'p')
 endif
-set undodir=$HOME/.vim/undo//
+set undodir=$HOME/.vim_keep/undo//
 set undofile
 
-if isdirectory($HOME . '/.vim/swap') == 0
-  call mkdir($HOME.'/.vim/swap', 'p')
+""""""""
+" swap "
+""""""""
+if isdirectory($HOME . '/.vim_keep/swap') == 0
+  call mkdir($HOME.'/.vim_keep/swap', 'p')
 endif
-set directory=$HOME/.vim/swap//
+set directory=$HOME/.vim_keep/swap//
 
 set backupskip+=*.tmp,crontab.*
 if has("mac")
   set backupskip+=/private/tmp/*
 endif
 
-if isdirectory($HOME . '/.vim/backup') == 0
-  call mkdir($HOME.'/.vim/backup', 'p')
+""""""""""
+" backup "
+""""""""""
+if isdirectory($HOME . '/.vim_keep/backup') == 0
+  call mkdir($HOME.'/.vim_keep/backup', 'p')
 endif
-set backupdir=$HOME/.vim/backup//
+set backupdir=$HOME/.vim_keep/backup//
 set backup
 
 source $HOME/.vim/config/ale.vim
